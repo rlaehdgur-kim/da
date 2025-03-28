@@ -1,0 +1,164 @@
+@charset "utf-8";
+
+* {
+    margin:0; padding:0; box-sizing: border-box;
+}
+a {
+    text-decoration: none; color:black;
+}
+img {
+    display: block; max-width: 100%;
+}
+
+#layout {
+    max-width:500px; margin:auto; border:2px solid pink;
+    height:150vh; position: relative;/*부모를 찾을때relative*/
+}
+nav {
+    display: flex; justify-content: space-between;
+    padding:10px;
+}
+nav button.material-symbols-outlined {
+    background: none; font-size:2rem;
+    border:none;
+}
+main {
+    padding:10px;
+}
+#hae {
+    background:skyblue;
+    border-radius:10px; height:50vh;
+    display: flex; align-items: center; justify-content: center;
+    letter-spacing: -1px;
+}
+#hae + div {
+    display: flex;
+}
+#hae + div section {
+    flex:1;
+    height:20vh; margin-top:20px;
+    text-align: center;
+}
+#hae+ div div {
+    background: pink; height:80%; margin:10px;
+}
+
+#kakao {
+    position:fixed; bottom:50px; right:10px; border:2px solid rgb(52, 5, 5);
+    width:100px;
+}  
+
+/****board.html***/
+
+/*로그인*/
+#board #login{
+    position: absolute; top: 0; 
+    width: 100%; padding: 15px;
+    display: flex; justify-content: space-between;
+    background: #999; left: 0;
+    
+    
+} 
+#board #login h2{
+    display: none;
+}
+
+#board #login{
+    font-size: 1.3rem;
+   
+}
+#board #login b{
+    font-weight: normal;
+    display: inline-block;
+    
+}
+#board #login b a{
+    text-decoration: underline;
+}
+
+#board #login div:last-child button{
+    display: block;
+    background: none; 
+    border: none;
+     margin: 0 0 5px auto;
+
+} 
+#board #custom {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 30px;
+}
+#board #custom a{
+    text-align: center;
+   
+}
+#board #custom span{
+    width: 100px; height: 100px; border-radius: 50%;
+    border: 2px solid #666; display: block;
+    margin-bottom: 7px;
+}
+#board #boards h2 {
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+#board #boards h2 button{
+    float: right;
+    background: none;
+    border: none;
+}
+#board #boards ul{
+    list-style: none;
+    line-height: 200%;
+    display: none;
+}
+#board #boards li{
+    border-bottom: 1px dashed black;
+}
+/********index.html*******/
+#index #gaip{
+    background: red;
+}
+#board #boards ul:first-of-type{
+    background-color: red;
+}
+
+/*******brand.html*****/
+ #brand #layout{
+    overflow: hidden;
+}
+#brand h2 {
+    text-align: center; font-size: 2rem;
+    border-bottom: 2px dashed black;
+    padding-bottom: 5px; margin-bottom: 20px;
+} 
+#brand #scroll{
+    overflow: auto;
+}
+#brand main nav{
+    width: 120%;
+}
+#brand main nav a{
+    display: inline-block;
+    border: 1px solid #666;
+    padding: 3px 5px;
+
+}
+#brand #pic_1, #brand #pic_2{
+    border: 2px solid black;
+    padding: 30px;
+    margin: 20px 0 10px;
+}
+#brand ul{
+     background-color: beige;
+     padding-left: 20px;
+}
+#brand ul li{
+    padding-bottom: 10px;
+}
+
+
+@media(min-width:501px){
+    #brand main nav {
+        width: 100%;
+    }
+}
